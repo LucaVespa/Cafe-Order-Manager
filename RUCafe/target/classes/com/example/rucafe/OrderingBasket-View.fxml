@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: mediumaquamarine;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rucafe.OrderingBasketController">
+   <children>
+      <ListView fx:id="itemList" layoutX="56.0" layoutY="126.0" prefHeight="182.0" prefWidth="489.0" />
+      <Button layoutX="368.0" layoutY="328.0" mnemonicParsing="false" onAction="#removeItem" text="Remove Selected Item" />
+      <Button layoutX="113.0" layoutY="328.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="25.0" prefWidth="135.0" text="Place Order" />
+      <TextField fx:id="subTotal" editable="false" layoutX="446.0" layoutY="20.0" mouseTransparent="true" prefHeight="25.0" prefWidth="87.0" />
+      <TextField fx:id="tax" editable="false" layoutX="446.0" layoutY="55.0" mouseTransparent="true" prefHeight="25.0" prefWidth="87.0" />
+      <TextField fx:id="total" editable="false" layoutX="446.0" layoutY="90.0" mouseTransparent="true" prefHeight="25.0" prefWidth="87.0" />
+      <TextField fx:id="addConfirmation" editable="false" layoutX="106.0" layoutY="361.0" mouseTransparent="true" style="-fx-background-color: transparent;" />
+      <TextField fx:id="removeConfirmation" alignment="CENTER" editable="false" layoutX="310.0" layoutY="361.0" mouseTransparent="true" prefHeight="25.0" prefWidth="251.0" style="-fx-background-color: transparent;" />
+      <TextField alignment="CENTER" editable="false" layoutX="46.0" layoutY="6.0" mouseTransparent="true" prefHeight="124.0" prefWidth="315.0" style="-fx-background-color: transparent;" text="Ordering Basket">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER_RIGHT" cache="true" editable="false" layoutX="358.0" layoutY="20.0" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Sub-Total:" />
+      <TextField alignment="CENTER_RIGHT" editable="false" layoutX="358.0" layoutY="56.0" mouseTransparent="true" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Tax:" />
+      <TextField alignment="CENTER_RIGHT" editable="false" layoutX="358.0" layoutY="90.0" mouseTransparent="true" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="Total:" />
+   </children>
+</AnchorPane>

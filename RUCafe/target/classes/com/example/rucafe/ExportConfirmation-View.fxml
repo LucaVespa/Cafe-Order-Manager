@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="150.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rucafe.ExportConfirmationController">
+   <children>
+      <Button layoutX="284.0" layoutY="100.0" mnemonicParsing="false" onAction="#closeTab" text="OK" />
+      <TextField alignment="CENTER" editable="false" layoutX="150.0" layoutY="30.0" mouseTransparent="true" prefHeight="25.0" prefWidth="298.0" style="-fx-background-color: Transparent;" text="Orders successfully exported to:" />
+      <TextField fx:id="filePath" alignment="CENTER" editable="false" layoutX="20.0" layoutY="60.0" prefHeight="25.0" prefWidth="557.0" style="-fx-background-color: Transparent;" />
+   </children>
+</AnchorPane>

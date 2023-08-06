@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rucafe.StoreOrdersController">
+   <children>
+      <ComboBox fx:id="orderPicker" layoutX="143.0" layoutY="107.0" onAction="#setList" prefHeight="25.0" prefWidth="84.0" />
+      <TextField fx:id="total" editable="false" layoutX="407.0" layoutY="107.0" mouseTransparent="true" prefHeight="25.0" prefWidth="110.0" />
+      <ListView fx:id="itemList" layoutX="61.0" layoutY="153.0" prefHeight="165.0" prefWidth="461.0" />
+      <Button layoutX="109.0" layoutY="332.0" mnemonicParsing="false" onAction="#removeOrder" text="Cancel Selected Order" />
+      <Button layoutX="362.0" layoutY="332.0" mnemonicParsing="false" onAction="#export" prefHeight="25.0" prefWidth="141.0" text="Export All Orders" />
+      <TextField fx:id="removeConfirmation" alignment="CENTER" editable="false" layoutX="52.0" layoutY="363.0" mouseTransparent="true" prefHeight="25.0" prefWidth="248.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="exportConfirmation" editable="false" layoutX="325.0" layoutY="363.0" prefHeight="25.0" prefWidth="255.0" style="-fx-background-color: Transparent;" />
+      <TextField editable="false" layoutX="318.0" layoutY="107.0" mouseTransparent="true" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: transparent;" text="Total Amount:" />
+      <TextField editable="false" layoutX="85.0" layoutY="107.0" mouseTransparent="true" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: transparent;" text="Order #" />
+      <TextField alignment="CENTER" editable="false" layoutX="62.0" mouseTransparent="true" style="-fx-background-color: transparent;" text="Store Orders">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="exportWarning" alignment="CENTER" editable="false" layoutX="329.0" layoutY="363.0" mouseTransparent="true" prefHeight="25.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

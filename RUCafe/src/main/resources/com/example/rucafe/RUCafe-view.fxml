@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: Crimson; -fx-border-color: White;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rucafe.RUCafeController">
+   <children>
+      <TextField editable="false" layoutX="14.0" layoutY="14.0" mouseTransparent="true" style="-fx-background-color: Transparent;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="250.0" layoutY="257.0" onMouseClicked="#openDonutView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Donut%20Icon.png" />
+         </image>
+      </ImageView>
+      <TextField alignment="CENTER" editable="false" layoutX="429.0" layoutY="51.0" mouseTransparent="true" prefHeight="45.0" prefWidth="320.0" style="-fx-background-color: Transparent; -fx-text-fill: Black;" text="Cafe">
+         <font>
+            <Font name="Impact" size="98.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cafeLogo" alignment="CENTER" editable="false" layoutX="437.0" layoutY="50.0" mouseTransparent="true" prefHeight="156.0" prefWidth="308.0" style="-fx-background-color: Transparent; -fx-text-fill: White;" text="Cafe">
+         <font>
+            <Font name="Impact" size="96.0" />
+         </font></TextField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="612.0" layoutY="234.0" onMouseClicked="#openCoffeeView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Coffee%20Icon.png" />
+         </image>
+      </ImageView>
+      <TextField alignment="CENTER" editable="false" layoutX="194.0" layoutY="385.0" mouseTransparent="true" onMouseClicked="#openDonutView" style="-fx-background-color: Transparent; -fx-text-fill: White;" text="Order Donuts">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="556.0" layoutY="385.0" mouseTransparent="true" onMouseClicked="#openCoffeeView" style="-fx-background-color: Transparent; -fx-text-fill: White;" text="Order Coffee">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="556.0" layoutY="665.0" mouseTransparent="true" onMouseClicked="#openStoreOrdersView" style="-fx-background-color: Transparent; -fx-text-fill: White;" text="Store Orders">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="194.0" layoutY="665.0" mouseTransparent="true" onMouseClicked="#openOrderingBasketView" style="-fx-background-color: Transparent; -fx-text-fill: White;" text="Ordering Basket">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="88.0" fitWidth="160.0" layoutX="341.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@RU%20Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="120.0" layoutX="637.0" layoutY="531.0" onMouseClicked="#openStoreOrdersView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Checklist.png" />
+         </image></ImageView>
+      <ImageView fitHeight="241.0" fitWidth="313.0" layoutX="204.0" layoutY="467.0" onMouseClicked="#openOrderingBasketView" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Shopping%20Bag.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rucafe.DonutController">
+   <children>
+      <ComboBox fx:id="type" layoutX="59.0" layoutY="91.0" onAction="#refresh" prefWidth="150.0" promptText="Yeast Donuts">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="yeast" fx:value="Yeast Donuts" />
+               <String fx:id="cake" fx:value="Cake Donuts" />
+               <String fx:id="hole" fx:value="Donut Holes" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button layoutX="369.0" layoutY="354.0" mnemonicParsing="false" onAction="#addToOrder" text="Add to Order" />
+      <ListView fx:id="optionList" layoutX="34.0" layoutY="129.0" prefHeight="200.0" prefWidth="200.0" />
+      <ComboBox fx:id="quantity" layoutX="271.0" layoutY="188.0" onAction="#refresh" prefHeight="25.0" prefWidth="60.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="one" fx:value="1" />
+               <String fx:id="two" fx:value="2" />
+               <String fx:id="three" fx:value="3" />
+               <String fx:id="four" fx:value="4" />
+               <String fx:id="five" fx:value="5" />
+               <String fx:id="six" fx:value="6" />
+               <String fx:id="seven" fx:value="7" />
+               <String fx:id="eight" fx:value="8" />
+               <String fx:id="nine" fx:value="9" />
+               <String fx:id="ten" fx:value="10" />
+               <String fx:id="eleven" fx:value="11" />
+               <String fx:id="twelve" fx:value="12" />
+               <String fx:id="thirteen" fx:value="13" />
+               <String fx:id="fourteen" fx:value="14" />
+               <String fx:id="fifteen" fx:value="15" />
+               <String fx:id="sixteen" fx:value="16" />
+               <String fx:id="seventeen" fx:value="17" />
+               <String fx:id="eighteen" fx:value="18" />
+               <String fx:id="nineteen" fx:value="19" />
+               <String fx:id="twenty" fx:value="20" />
+               <String fx:id="twentyone" fx:value="21" />
+               <String fx:id="twentytwo" fx:value="22" />
+               <String fx:id="twentythree" fx:value="23" />
+               <String fx:id="twentyfour" fx:value="24" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ListView fx:id="selectedList" layoutX="366.0" layoutY="135.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="288.0" layoutY="235.0" mnemonicParsing="false" onAction="#addDonuts" text="+" />
+      <Button layoutX="288.0" layoutY="285.0" mnemonicParsing="false" onAction="#removeDonuts" prefHeight="25.0" prefWidth="25.0" text="-" />
+      <TextField fx:id="warningMsg" alignment="CENTER_RIGHT" editable="false" layoutX="5.0" layoutY="354.0" mouseTransparent="true" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="total" editable="false" layoutX="470.0" layoutY="354.0" mouseTransparent="true" prefHeight="25.0" prefWidth="96.0" />
+      <ImageView fx:id="donutImage" fitHeight="84.0" fitWidth="141.0" layoutX="396.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@donutIcon.png" />
+         </image></ImageView>
+      <TextField alignment="CENTER" editable="false" layoutX="82.0" layoutY="-8.0" mouseTransparent="true" prefHeight="84.0" prefWidth="314.0" style="-fx-background-color: transparent;" text="Ordering Donuts">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
